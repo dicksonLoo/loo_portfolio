@@ -31,7 +31,7 @@ const Contact = () => {
         >
           {CONTACT.phone}
         </motion.p>
-        <a href="#" className="border-b">
+        <a href={`mailto:${CONTACT.email}`} className="border-b">
           {CONTACT.email}
         </a>
       </div>

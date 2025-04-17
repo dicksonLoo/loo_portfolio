@@ -1,5 +1,6 @@
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { CONTACT } from "../constant.js";
 
 const Navbar = () => {
   return (
@@ -10,10 +11,11 @@ const Navbar = () => {
       </div>
 
       <div className="flex items-center justify-center gap-4 text-2xl">
-        <FaLinkedin />
-        <FaGithub />
-        <FaInstagram />
-        <FaSquareXTwitter />
+        <a href={`${CONTACT.linkedIn}`} target="_blank"><FaLinkedin /></a>
+        <a href={`${CONTACT.github}`} target="_blank"><FaGithub /></a>
+        <a href={`${CONTACT.instagram}`} target="_blank"><FaInstagram /></a>
+        <a href={`${CONTACT.whatsapp}`} target="_blank"><FaWhatsapp /></a>
+        
       </div>
     </nav>
   );

@@ -5,6 +5,7 @@ import { RiPhpLine } from "react-icons/ri";
 import { RiHtml5Line } from "react-icons/ri";
 import { RiJavascriptLine } from "react-icons/ri";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { SiMysql } from "react-icons/si";
 
 import { motion } from "motion/react";
 
@@ -69,6 +70,14 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <RiJavascriptLine className="text-7xl text-yellow-400" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(1)}
+          initial="intial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiMysql className="text-7xl" style={{ color: "#00758F" }} />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
