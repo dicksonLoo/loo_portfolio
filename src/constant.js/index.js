@@ -18,6 +18,20 @@ I thrive in fast-paced environments, especially startups, where I can leverage m
 When I’m not coding, I enjoy exploring new tech trends and contributing to projects that challenge me to grow. My goal is to help businesses and clients build systems that perfectly fit their needs—whether that means optimizing databases, crafting APIs, or developing full-stack applications.
 `;
 
+export const SOFT_SKILLS = [
+    "Problem Solving",
+    "Teamwork",
+    "Adaptability",
+    "Communication",
+    "Time Management",
+    "Critical Thinking",
+    "Quick Learner",
+    "Creativity",
+    "Accountability",
+    "Self-Motivation",
+    "Empathy",
+]
+
 export const EXPERIENCES = [
     {
         year: "02/2023 - 12/2023",
