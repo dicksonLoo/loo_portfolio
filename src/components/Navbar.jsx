@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="m-8 mb-20 flex items-center justify-between py-6">
       <div className="flex flex-shrink-0 items-center gap-4">
         {/* <img src="/vite.svg" alt="Vite Logo" className="h-8" /> */}
-        <h1 className="text-2xl font-bold">Loo</h1>
+        <h1 className="text-2xl font-bold">Hi, I'm Loo</h1>
       </div>
 
       <div className="flex items-center justify-center gap-4 text-2xl">
