@@ -11,10 +11,10 @@ const Navbar = () => {
       </div>
 
       <div className="flex items-center justify-center gap-4 text-2xl">
-        <a href={`${CONTACT.linkedIn}`} target="_blank"><FaLinkedin /></a>
-        <a href={`${CONTACT.github}`} target="_blank"><FaGithub /></a>
-        <a href={`${CONTACT.instagram}`} target="_blank"><FaInstagram /></a>
-        <a href={`${CONTACT.whatsapp}`} target="_blank"><FaWhatsapp /></a>
+        <a href={`${CONTACT.linkedIn}`} target="_blank" className="hover:scale-120"><FaLinkedin /></a>
+        <a href={`${CONTACT.github}`} target="_blank" className="hover:scale-120"><FaGithub /></a>
+        <a href={`${CONTACT.instagram}`} target="_blank" className="hover:scale-120"><FaInstagram /></a>
+        <a href={`${CONTACT.whatsapp}`} target="_blank" className="hover:scale-120"><FaWhatsapp /></a>
         
       </div>
     </nav>
