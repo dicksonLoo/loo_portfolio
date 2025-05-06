@@ -24,71 +24,73 @@ const iconVariants = (duration) => ({
 
 const Technologies = () => {
   return (
-    <div className="border-b border-neutral-800 pb-24">
-      <motion.h1
-        whileInView={{ opacity: 1, y: 0 }}
-        initial={{opacity:0, y:-100}}
-        transition={{duration:1.5}}
-        className="my-20 text-center text-4xl "
-      >
-        Technologies
-      </motion.h1>
-      <motion.div
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
-        transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center gap-6"
-      >
-        <motion.div
-          variants={iconVariants(2.5)}
-          initial="intial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4 hover:scale-105 hover:border-gray-500"
+    <section id="technologies">
+      <div className="border-b border-neutral-800 pb-24">
+        <motion.h1
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -100 }}
+          transition={{ duration: 1.5 }}
+          className="my-20 text-center text-4xl "
         >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
-        </motion.div>
+          Technologies
+        </motion.h1>
         <motion.div
-          variants={iconVariants(5)}
-          initial="intial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4 hover:scale-105 hover:border-gray-500"
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ duration: 1.5 }}
+          className="flex flex-wrap items-center justify-center gap-6"
         >
-          <RiPhpLine className="text-7xl text-blue-500" />
+          <motion.div
+            variants={iconVariants(2.5)}
+            initial="intial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4 hover:scale-105 hover:border-gray-500"
+          >
+            <RiReactjsLine className="text-7xl text-cyan-400" />
+          </motion.div>
+          <motion.div
+            variants={iconVariants(5)}
+            initial="intial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4 hover:scale-105 hover:border-gray-500"
+          >
+            <RiPhpLine className="text-7xl text-blue-500" />
+          </motion.div>
+          <motion.div
+            variants={iconVariants(2)}
+            initial="intial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4 hover:scale-105 hover:border-gray-500"
+          >
+            <RiHtml5Line className="text-7xl text-orange-600" />
+          </motion.div>
+          <motion.div
+            variants={iconVariants(6)}
+            initial="intial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4 hover:scale-105 hover:border-gray-500"
+          >
+            <RiJavascriptLine className="text-7xl text-yellow-400" />
+          </motion.div>
+          <motion.div
+            variants={iconVariants(1)}
+            initial="intial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4 hover:scale-105 hover:border-gray-500"
+          >
+            <SiMysql className="text-7xl" style={{ color: "#00758F" }} />
+          </motion.div>
+          <motion.div
+            variants={iconVariants(3)}
+            initial="intial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4 hover:scale-105 hover:border-gray-500"
+          >
+            <BiLogoPostgresql className="text-7xl text-sky-700" />
+          </motion.div>
         </motion.div>
-        <motion.div
-          variants={iconVariants(2)}
-          initial="intial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4 hover:scale-105 hover:border-gray-500"
-        >
-          <RiHtml5Line className="text-7xl text-orange-600" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(6)}
-          initial="intial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4 hover:scale-105 hover:border-gray-500"
-        >
-          <RiJavascriptLine className="text-7xl text-yellow-400" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(1)}
-          initial="intial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4 hover:scale-105 hover:border-gray-500"
-        >
-          <SiMysql className="text-7xl" style={{ color: "#00758F" }} />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(3)}
-          initial="intial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4 hover:scale-105 hover:border-gray-500"
-        >
-          <BiLogoPostgresql className="text-7xl text-sky-700" />
-        </motion.div>
-      </motion.div>
-    </div>
+      </div>
+    </section>
   );
 };
 
